@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{$title}</title>
+	<style type="text/css">
+		.register{
+			width:50px;
+			height: 30px;
+			border-radius: 5px 5px 5px 5px;
+			border: 1px solid #898988;
+			text-decoration: none;
+			background: pink;
+			line-height: 30px;
+			text-align: center;
+			display: block;
+			color:#444;
+		}
+	</style>
+	<script type="text/javascript" src="../../../../public/static/js/jquery-1.12.4.js"></script>
+	<script type="text/javascript">
+			$(function(){
+				//alert($('#login'));
+			});
+	</script>
+</head>
+<body>
+	<a href="#"class="register">注册<a>
+	<h1>用户登陆</h1>
+	<form action="doLogin" method="post" enctype="mulitpart/form-data">
+		账号:<input type="text" name="username" placeholder="输入账号" id='username'><br/>
+		密码:<input type="password" name="password" id="password"><br/>
+		<br/>
+		<input type="button" value="登陆" id="login">
+	</form>
+</body>
+</html>
